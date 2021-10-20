@@ -149,19 +149,18 @@
                         </thead>
                         <tbody>
                             <?php
-                             foreach($filas as $fila) { 
-                                 //var_dump($fila); 
-                             ?>
+                            foreach($todas_filas as $fila){
+                            ?>
                              <tr>
-                                    <td><?php echo $fila['ruc']?></td>
-                                    <td><?php echo $fila['nombre']?></td>
-                                    <td><?php echo $fila['direccion']?></td>
-                                    <td><?php echo $fila['distrito']?></td>
-                                    <td><?php echo $fila['nro_partida_electronica']?></td>
+                                    <td><?php echo $fila['ruc'];?></td>
+                                    <td><?php echo $fila[1];?></td>
+                                    <td><?php echo $fila[2];?></td>
+                                    <td><?php echo $fila[3];?></td>
+                                    <td><?php echo $fila[4];?></td>
                                 </tr>
                              <?php
-                              }
-                             ?>
+                            }
+                            ?>
                         </tbody>
                     </table>
                 </div>
